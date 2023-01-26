@@ -11,4 +11,9 @@ breads.get('/bakery', (req, res) => {
     res.send('This is the bakery')
 })
 
+//Show
+breads.get('/:arrayIndex', (req, res) => {
+    res.send(bread[req.params.arrayIndex])
+})
+
 module.exports = breads
